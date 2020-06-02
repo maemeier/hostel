@@ -82,6 +82,86 @@ p {
 }
 
 /*
+===============
+Navbar
+===============
+*/
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #1f2656;
+  box-shadow: black;
+  z-index: 2;
+}
+.nav-center {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.nav-toggle {
+  background: transparent;
+  border: transparent;
+  font-size: 1.5rem;
+  color: var(--clr-style-5);
+  transition: var(--transition);
+  background: #1f2656;
+}
+.nav-toggle:hover {
+  transform: scale(1.2);
+}
+
+.nav-link {
+  display: block;
+  padding: 1rem 2rem;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  transition: var(--transition);
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.nav-link:hover {
+  background: #746a57;
+  padding-left: 2.25rem;
+}
+.nav-links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+.show-links {
+  height: 280px;
+}
+@media screen and (min-width: 992px) {
+  .nav-toggle {
+    display: none;
+    background: transparent;
+  }
+  .nav-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .nav-links {
+    height: auto;
+    display: flex;
+  }
+  .nav-header {
+    padding: 0 0;
+  }
+}
+/*
+
+/*
 
 ===============
 Hero
@@ -90,11 +170,7 @@ Hero
 */
 .hero {
   min-height: 70vh;
-  background: linear-gradient(
-    90deg,
-    rgba(34, 42, 97, 1) 0%,
-    rgba(7, 12, 47, 1) 97%
-  );
+  background: linear-gradient(rgba(34, 42, 97, 1) 0%, rgba(7, 12, 47, 1) 97%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -359,6 +435,15 @@ Service
     visibility: visible;
     display: block;
   }
+  .serive-info {
+    width: 200px;
+    height: 150px;
+    background: #e8b92c;
+    position: absolute;
+
+    top: 150px;
+    z-index: 3;
+  }
 }
 
 /*
@@ -382,10 +467,12 @@ Contact
 
 .contact {
   background: #ad9562;
-  height: 200px;
+  height: 300px;
 }
 .contact-text {
-  margin: 0;
+  margin-top: 0;
+  padding-top: 20px;
+  margin-left: 40px;
 }
 
 .align-center {
@@ -401,40 +488,17 @@ Contact
 .contact-text {
   text-transform: uppercase;
 }
-.form-control {
-  display: block;
-  width: 100%;
-  border: none;
-  background: transparent;
-  border-bottom: 2px solid black;
-  outline: none;
-  margin: 2rem 0;
-  padding: 1.3rem 0;
-  font-size: 0.85rem;
-  font-weight: bold;
-}
-.form-control::placeholder {
-  color: black;
-  text-transform: uppercase;
-}
-@media screen and (min-width: 992px) {
-  .contact-info,
-  .contact-form {
-    float: left;
-    width: 50%;
-    padding: 0 1rem;
-  }
-  .contact-info {
-    padding-top: 5rem;
-  }
-}
+
 @media screen and (min-width: 700px) {
-  .map {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
   .context-text {
     font-size: 16px;
+  }
+  .map {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .contact {
+    height: 350px;
   }
 }
 

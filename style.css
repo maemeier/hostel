@@ -288,6 +288,8 @@ Service
 .service-icon {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 300px;
+  margin: auto;
 }
 .icon-service {
   align-self: center;

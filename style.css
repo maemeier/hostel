@@ -91,7 +91,7 @@ Navbar
   top: 0;
   left: 0;
   width: 100%;
-  background: #1f2656;
+  background: #21295a;
   box-shadow: black;
   z-index: 2;
 }
@@ -112,7 +112,8 @@ Navbar
   font-size: 1.5rem;
   color: var(--clr-style-5);
   transition: var(--transition);
-  background: #1f2656;
+  background: #21295a;
+  float: right;
 }
 .nav-toggle:hover {
   transform: scale(1.2);

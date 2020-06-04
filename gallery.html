@@ -18,7 +18,13 @@
     <link rel="stylesheet" href="./style.css" />
     <title>HOTEL AZURE</title>
   </head>
-  <body>
+  <body
+    style=" background: linear-gradient(
+      90deg,
+      rgba(34, 42, 97, 1) 0%,
+      rgba(7, 12, 47, 1) 97%
+    );"
+  >
     <header id="home"></header>
   </body>
 
@@ -43,7 +49,7 @@
         </li>
 
         <li>
-          <a href="#gallery" class="nav-link">gallery</a>
+          <a href="gallery.html" class="nav-link">gallery</a>
         </li>
       </ul>
     </div>
@@ -59,57 +65,95 @@
     </div>
   </div>
   <!-- end of header  -->
-  <!--middle-->
-  <div class="yellow-container">
-    <div class="yellow-content">
-      <h1 class="yellow-title">Don't stay awake for too long</h1>
-      <p class="yellow-text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      </p>
-      <p class="yellow-text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      </p>
-      <button class="btn-room">More photos</button>
-    </div>
-    <!-- <img src="./images/cat.png" alt="cat" class="cat" /> -->
-    <div class="yellow-img">
-      <img src="./images/cat.png" alt="cat" class="cat" />
-      <img src="./images/blueroom.jpg" alt="blueroom" class="blueroom" />
-    </div>
-  </div>
-  <div class="blue-bg">
-    <div class="blue-container">
-      <div class="blue-content">
-        <h1 class="blue-title">Don't stay awake for too long</h1>
-        <div class="blue-line"></div>
-        <p class="blue-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip
-        </p>
-      </div>
-      <div></div>
-    </div>
-  </div>
-  <!--end of middle-->
 
-  <!-- photo  -->
-  <div class="main-service room-img">
-    <div class="service">
-      <div class="img-service">
-        <img src="./images/AzureHostel-82.jpg" class="service-photo" />
-        <img src="./images/AzureHostel-40.jpg" class="service-photo" />
-        <img src="./images/AzureHostel-71.jpg" class="service-photo" />
-      </div>
+  <!-- about  -->
+  <div class="slider-container">
+    <div class="slide">
+      <img src="./images/AzureHostel-40.jpg" class="slide-img" alt="" />
     </div>
+    <div class="slide">
+      <img src="./images/AzureHostel-58.jpg" class="slide-img" alt="" />
+    </div>
+    <div class="slide">
+      <img src="./images/AzureHostel-64.jpg" class="slide-img" alt="" />
+    </div>
+    <div class="slide">
+      <img src="./images/AzureHostel-71.jpg" class="slide-img" alt="" />
+    </div>
+  </div>
+  <div class="btn-container">
+    <button type="button" class="prevBtn">
+      prev
+    </button>
+    <button type="button" class="nextBtn">
+      next
+    </button>
   </div>
 
-  <!-- end of photo  -->
+  <!-- end of about  -->
+
+  <!-- photos   -->
+
+  <section class="tiles">
+    <div class="tiles-center">
+      <!-- single tile -->
+      <article class="tile-1">
+        <img src="./images/AzureHostel-82.jpg" alt="room" />
+      </article>
+      <!-- end of single tile -->
+
+      <!-- single tile -->
+      <article class="tile-2">
+        <img src="./images/AzureHostel-106.jpg" alt="room" />
+      </article>
+      <!-- end of single tile -->
+
+      <!-- single tile -->
+      <article class="tile-3">
+        <img src="./images/AzureHostel-50.jpg" alt="room" />
+      </article>
+      <!-- end of single tile -->
+
+      <!-- single tile -->
+      <article class="tile-4">
+        <img src="./images/AzureHostel-55.jpg" alt="room" />
+      </article>
+      <!-- end of single tile -->
+
+      <!-- single tile -->
+      <article class="tile-5">
+        <img src="./images/AzureHostel-58.jpg" alt="room" />
+      </article>
+      <!-- end of single tile -->
+
+      <!-- single tile -->
+      <article class="tile-6">
+        <img src="./images/AzureHostel-120.jpg" alt="room" />
+      </article>
+      <!-- end of single tile -->
+
+      <!-- single tile -->
+      <article class="tile-7">
+        <img src="./images/AzureHostel-61.jpg" alt="room" />
+      </article>
+      <!-- end of single tile -->
+
+      <!-- single tile -->
+      <article class="tile-8">
+        <img src="./images/AzureHostel-119.jpg" alt="room" />
+      </article>
+      <!-- end of single tile -->
+
+      <!-- single tile -->
+      <article class="tile-9">
+        <img src="./images/AzureHostel-126.jpg" alt="room" />
+      </article>
+      <!-- end of single tile -->
+    </div>
+  </section>
+  <!-- end of tile -->
+
+  <!-- list of photos   -->
   <!-- info   -->
   <div>
     <img src="./images/AzureHostel-55.jpg" class="info-img" />

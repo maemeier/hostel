@@ -896,16 +896,16 @@ price div
   color: white;
   margin-top: 30px;
 }
-.price-img {
-  background-image: url("./images/AzureHostel-126.jpg");
-  background-position: center;
-  background-size: cover;
-}
+
 @media screen and (min-width: 700px) {
   .price-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: auto;
+  }
+  .info-img1 {
+    visibility: hidden;
+    display: none;
   }
   .price-img {
     background-image: url("./images/AzureHostel-126.jpg");
@@ -990,7 +990,6 @@ Slider
 .slider-container {
   margin: 0 auto;
   height: 70vh;
-  max-width: 80rem;
   position: relative;
   overflow: hidden;
 }

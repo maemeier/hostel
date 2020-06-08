@@ -227,6 +227,9 @@ Hero
   .logo {
     max-width: 500px;
   }
+  p .hero-text {
+    font-size: 20px;
+  }
 }
 .slideInDown {
   -webkit-animation-name: slideInDown;
@@ -384,7 +387,7 @@ About
   }
   .about-title {
     font-size: 2rem;
-    width: 550px;
+    width: 480px;
   }
 }
 .slideInRight {
